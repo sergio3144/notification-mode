@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 62.5%;
+    background-color: #f7fafd;
+}
+.main {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 70px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px hsl(211, 68%, 94%);
+    border-radius: 15px;
+}
+.main__notification {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main__contain {
+    display: flex;
+}
+.main__titleNotification {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    letter-spacing: 1px;
+}
+.main__numberNotification {
+    width: 30px;
+    height: 30px;
+    background-color: hsl(219, 85%, 26%);
+    text-align: center;
+    padding-top: 7px;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.main__deleteTodo {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 700;
+}
+.main__deleteTodo:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+/* TARGETAS DE PERSONAS */
+
+.main__person {
+    display: flex;
+    margin-top: 20px;
+    background-color: hsl(211, 68%, 94%);
+    padding: 20px;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.main__image {
+    width: 50px;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.main__information {
+    font-size: .5rem;
+    max-width: 585px;
+    color: rgb(148, 148, 148);
+    font-weight: 300;
+    letter-spacing: .5px;
+}
+.span {
+    color: black;
+}
+.span__opacity {
+    color: rgb(85, 85, 85);
+}
+.main__fetch {
+    color: rgb(121, 121, 255);
+    margin-top: 2px;
+}
+.point {
+    width: 10px;
+}
+
+.desactived {
+    background-color: #ffffff;
+    transition: .2s;
+}
+.btncito {
+    opacity: 0;
+    transition: .2s;
+}
+
+@media(max-width: 500px) {
+    .main__notification {
+        justify-content: center;
+    }
+    .main__deleteTodo {
+        margin-top: 10px;
+    }
+}
